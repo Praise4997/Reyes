@@ -7,22 +7,26 @@
     <title>Reyes Marketing</title>
     <style>
         body{
-            background-color: black;
+            background-color: transparent;
         }
         .email-signature{
             display: flex;
             margin: auto;
             justify-content: center;
             align-items: center;
+            text-align: left;
+            vertical-align: middle;
             padding: 10px;
         }
         .row1 img{
-            height: 300px;
+            height: 150px;
+            overflow: hidden;
+            padding: 5px;
         }
         .row2 h2{
             color: #334454;
             font-family: 'Times New Roman';
-            font-size: 2em;
+            font-size: 1.2em;
             line-height:normal;
             vertical-align: baseline;
             letter-spacing: normal;
@@ -38,25 +42,60 @@
         }
 
         .row2{
-            margin-left: 30px;
+            padding: 18px;
         }
+
         .row3 img{
-            margin-top: 10px;
+            margin-top: 5px;
+            height: 25px;
+            width: 25px;
+            opacity: 0.8;
+        }
+
+        .row3 img:nth-child(2){
+            height: 22px;
+            width: 22px;
+        }
+
+        .row3 img:nth-child(3){
+            height: 20px;
+            width: 20px;
+        }
+        
+        .row3{
+            display: flex;
+            align-items: center;
+            justify-content: left;
         }
 
         @media (max-width:768px){
+            .email-signature{
+                padding: 0px;
+            }
             .row1 img{
-                height: 120px;
+                height: 80px;
             }
             .row2 h2{
-                font-size: 0.7em;
-            }
-            .row2{
-                margin-left: 10px;
+                font-size: 0.6em;
             }
             .row3 img{
             margin-top: 4px;
            }
+           .row3 img{
+            height: 19px;
+            width: 19px;
+            }
+            .row3 img:nth-child(2){
+                height: 16px;
+                width: 16px;
+            }
+            .row3 img:nth-child(3){
+                height: 14px;
+                width: 14px;
+            }
+            .row2{
+                padding: 5px;
+            }
         }
     </style>
 
@@ -65,14 +104,16 @@
 <body>
     <div class="email-signature">
         <div class="row1">
-            <img src="./images/IMG-20221216-WA0019.jpg" alt="">
+            <img src="./images/IMG-20221216-WA0019-removebg-preview.png" alt="">
         </div>
         <div class="row2">
             <h2>Jess Baldino</h2>
             <h2>Account Coordinator</h2>
             <h2><span class="lighter-color">W</span> reyes.net.au</h2>
             <div class="row3">
-                <img src="./images/IMG-20221216-WA0015.jpg" alt="">
+                <img src="./images/icons8-instagram.svg" alt="">
+                <img src="./images/icons8-facebook.svg" alt="">
+                <img src="./images/icons8-linkedin.svg" alt="">
             </div>
         </div>
     </div>
